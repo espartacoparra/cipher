@@ -1,9 +1,8 @@
+import os
+os.system('node main.js')
+print 'casa'
 
-casa()
 
 
-function {
- print 'casa'
-}
 
 
