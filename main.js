@@ -21,8 +21,7 @@ const Files = new class files {
  getFiles() {
   let list = fs.readdirSync(base);
   return list.filter((file) => {
-   console.log(base + '/' + file, fs.lstatSync(base + '/' + file).isFile());
-   if (fs.lstatSync(base + '/' + file).isFile() && file != 'main.js' && file != 'package-lock.json' && file != '.gitignore') {
+   if (fs.lstatSync(base + '/' + file).isFile() && file != 'main.js' && file != 'package-lock.json' && file != '.gitignore' && file != 'package.json') {
     return file
    }
   })
@@ -36,7 +35,6 @@ const Files = new class files {
   } else if (this.option.value == 'D') {
    file = fs.readFileSync(base + '/' + data, 'utf8')
    let decrypData = this.decrypFiles(file)
-   console.log(file);
    this.writeFile(decrypData, data);
   }
  }

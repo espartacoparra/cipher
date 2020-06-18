@@ -1,0 +1,24 @@
+{
+  "name": "cipher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "inquirer": "^7.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/espartacoparra/cipher.git"
+  },
+  "author": "Espartaco Parra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/espartacoparra/cipher/issues"
+  },
+  "homepage": "https://github.com/espartacoparra/cipher#readme"
+}
